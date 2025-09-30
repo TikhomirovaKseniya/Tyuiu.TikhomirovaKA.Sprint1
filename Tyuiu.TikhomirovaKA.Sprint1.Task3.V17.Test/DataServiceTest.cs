@@ -13,6 +13,10 @@ namespace Tyuiu.TikhomirovaKA.Sprint1.Task3.V17.Test
             double number = 243.356;
             bool res = ds.ZeroCheck(number);
             Assert.AreEqual(false, res);
+
+            double number2 = 2403.356;
+            bool res2 = ds.ZeroCheck(number2);
+            Assert.AreEqual(true, res2);
         }
     }
 }

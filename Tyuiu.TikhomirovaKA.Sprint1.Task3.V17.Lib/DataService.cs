@@ -10,9 +10,9 @@ namespace Tyuiu.TikhomirovaKA.Sprint1.Task3.V17.Lib
             int index = stroka.IndexOf(',');
             if (index == -1) return false;
 
-            if (index + 1 < stroka.Length && stroka[index + 1] == '0') return true;
-            if (index + 2 < stroka.Length && stroka[index + 2] == '0') return true;
-            if (index + 3 < stroka.Length && stroka[index + 3] == '0') return true;
+            if (index - 1 < stroka.Length && stroka[index - 1] == '0') return true;
+            if (index - 2 < stroka.Length && stroka[index - 2] == '0') return true;
+            if (index - 3 < stroka.Length && stroka[index - 3] == '0') return true;
 
             return false;
         }
