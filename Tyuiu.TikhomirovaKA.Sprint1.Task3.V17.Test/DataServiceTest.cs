@@ -10,9 +10,9 @@ namespace Tyuiu.TikhomirovaKA.Sprint1.Task3.V17.Test
         {
             DataService ds = new DataService();
 
-            double number = 243.3056;
+            double number = 243.356;
             bool res = ds.ZeroCheck(number);
-            Assert.AreEqual(true, res);
+            Assert.AreEqual(false, res);
         }
     }
 }
