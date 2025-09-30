@@ -9,7 +9,7 @@ namespace Tyuiu.TikhomirovaKA.Sprint1.Task6.V8.Lib
             string[] words = value.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
             string result = "";
             for (int i = 0; i < words.Length; i++)
-                result += words[i].Substring(1) + words[i][0] + " ";
+                result += (i > 0 ? " " : "") + words[i].Substring(1) + words[i][0];
             return result;
         }
     }
